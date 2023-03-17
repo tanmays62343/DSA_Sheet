@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Q6_Arr {
+public class Q6_Arr_Union {
 
     public static void main(String[] args) {
         int [] arr1 = {10,20,30,40,50};

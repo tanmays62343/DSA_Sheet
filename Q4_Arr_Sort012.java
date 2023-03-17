@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Q4_Arr {               //Sort the array of 0,1,2s without using any Algo
+public class Q4_Arr_Sort012 {               //Sort the array of 0,1,2s without using any Algo
     public static void main(String[] args) {
         int [] arr = {2,2,1,0,1,2,0};
         sort012(arr);

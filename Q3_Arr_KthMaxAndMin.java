@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Q3_Arr {           //Kth smallest element
+public class Q3_Arr_KthMaxAndMin {           //Kth smallest element
     public static void main(String[] args) {
 
         int [] arr = {10,20,30,40,50,60,70};

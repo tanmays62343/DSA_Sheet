@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Q5_Arr {
+public class Q5_Arr_MoveNegatives {
 
     public static void main(String[] args) {                //Sort all negative numbers
         int [] arr = {10,20,30,40,-50,-60,70,-80};
