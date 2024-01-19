@@ -7,7 +7,7 @@ public class FibonacciSeries {
         fibonacci_Iterative(10);
     }
 
-    //Recursive Solution
+    //Recursive Solution (Gives only the last term)
     static int fibonacci(int N){
         if(N <= 1){
             return N;
@@ -19,7 +19,7 @@ public class FibonacciSeries {
         return last + slast;
     }
 
-    //Iterative Solution
+    //Iterative Solution (Gives All the terms)
     static void fibonacci_Iterative(int n){
         if(n==0){
             System.out.println(0);
