@@ -31,7 +31,6 @@ public class ReverseAnArray {
             int temp = arr[p1];
             arr[p1] = arr[p2];
             arr[p2] = temp;
-
             p1++;
             p2--;
         }
