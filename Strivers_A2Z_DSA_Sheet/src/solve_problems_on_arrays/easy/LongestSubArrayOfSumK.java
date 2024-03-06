@@ -30,16 +30,17 @@ public class LongestSubArrayOfSumK {
     //Better solution : O(n log n) [cause finding in map takes log n]
     //Hashing (complex see dry run video)
     //Works for +ve/ -ve and 0s.  (max Optimized)
-    static void longestSubArrayOfSumK_Better(int[] arr, int sub) {
+    static void longestSubArrayOfSumK_Better(int[] arr, int target) {
         Map<Long, Integer> sumMap = new HashMap<>();
+        //Storing key value pair in format - [Sum, Index]
         long sum = 0;
         int subArrayLen = -1;
         for (int i = 0; i < arr.length; i++) {
             sum += arr[i];
-            if (sum == sub) {
+            if (sum == target) {
                 subArrayLen = Math.max(subArrayLen, i + 1);
             }
-            long rem = sum - sub;
+            long rem = sum - target;
             if (sumMap.containsKey(rem)) {
                 int len = i - sumMap.get(rem);
                 subArrayLen = Math.max(subArrayLen, len);

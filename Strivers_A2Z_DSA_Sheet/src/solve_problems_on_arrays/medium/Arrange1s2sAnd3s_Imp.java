@@ -1,6 +1,7 @@
 package solve_problems_on_arrays.medium;
-
 import java.util.Arrays;
+
+//!Dutch National Flag Algorithm
 
 public class Arrange1s2sAnd3s_Imp {
     public static void main(String[] args) {

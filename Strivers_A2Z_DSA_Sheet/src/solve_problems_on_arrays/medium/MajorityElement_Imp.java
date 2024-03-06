@@ -1,7 +1,7 @@
 package solve_problems_on_arrays.medium;
-
 import java.util.HashMap;
 
+//!Moore's Voting Algorithm
 public class MajorityElement_Imp {
     public static void main(String[] args) {
         int[] arr = {2, 2, 1, 1, 1, 2, 2};
@@ -39,15 +39,39 @@ public class MajorityElement_Imp {
         map.forEach((key,value) -> {
             if(value > arr.length/2){
                 System.out.println("The majority element is : "+key);
-            }else{
-                System.out.println("-1");
             }
         });
     }
 
-    //Optimal solution : O()
-    //TODO : Moore's Voting Algorithm
+    //Optimal solution : O(n)+O(n)
+    //!Moore's Voting Algorithm
+    //It is divided into two parts selecting a candidate and Verifying the candidate
     static void majorityElement_Optimal(int[] arr){
+        int count = 0;
+        int element = 0;
+        //Applying the moore's algo and selecting most potential candidate
+        for(int i=0; i< arr.length; i++){
+            if(count == 0){
+                count = 1;
+                element = arr[i];
+            } else if(element == arr[i]){
+                count++;
+            } else {
+                count--;
+            }
+        }
+        //Verifying if the selected candidate is in majority or not
+        int counter = 0;
+        for(int i = 0; i< arr.length; i++){
+            if(arr[i] == element){
+                counter++;
+            }
+        }
+        if(counter > arr.length/2){
+            System.out.println("Majority Element is :"+element);
+        } else{
+            System.out.println("Majority Element Not Found");
+        }
 
     }
 
