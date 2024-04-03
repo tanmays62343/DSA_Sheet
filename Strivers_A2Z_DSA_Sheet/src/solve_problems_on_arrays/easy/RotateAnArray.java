@@ -10,7 +10,7 @@ public class RotateAnArray {
         rotateAnArray(arr,1);
     }
 
-    //Left Rotate and array
+    //Left Rotate an array
     static void rotateAnArray(int [] arr,int n){
         //for(int k =1; k <= n; k++) {      //If we want to rotate it by n places
             //Store first element in temp variable then shift all to left and place it in last
